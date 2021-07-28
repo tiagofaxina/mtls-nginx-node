@@ -1,7 +1,6 @@
 # compiled output
 /certs
 /dist
-/nginx-server
 /node_modules
 
 # Logs

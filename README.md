@@ -21,6 +21,15 @@
     ```
 
 3.  **Generate certificates**
+    - Create and access "certs" folder
+    ```bash
+    $ mkdir certs
+    ```
+    ```bash
+    $ cd certs
+    ```
+
+    - Generate certificates
     ```bash
     $ openssl req -newkey rsa:4096 -x509 -keyout ca.key -out ca.crt -days 30 -nodes -subj "//CN=my_ca"
     ```
