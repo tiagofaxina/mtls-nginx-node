@@ -16,7 +16,11 @@
     ```
 
 2.  **Access project folder.**
+    ```bash
+    $ cd mtls-nginx-node
+    ```
 
+3.  **Generate certificates**
     ```bash
     $ openssl req -newkey rsa:4096 -x509 -keyout ca.key -out ca.crt -days 30 -nodes -subj "//CN=my_ca"
     ```
@@ -31,12 +35,6 @@
     ```
     ```bash
     openssl x509  -req -in client.csr -out client.crt -CA ca.crt -CAkey ca.key -CAcreateserial -days 30
-    ```
-
-3.  **Generate certificates**
-
-    ```bash
-    $ cd mtls-nginx-node
     ```
 
 4.  **Installation**
