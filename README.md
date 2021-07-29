@@ -29,6 +29,9 @@
     $ cd certs
     ```
 
+    - Create global.pass file
+    $ touch global.pass
+
     - Generate certificates
     ```bash
     $ openssl req -newkey rsa:4096 -x509 -keyout ca.key -out ca.crt -days 30 -nodes -subj "//CN=my_ca"

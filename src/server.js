@@ -3,7 +3,6 @@
 const express = require('express');
 const port = 3000;
 
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 const app = express();
 
 app.get('/', (req, res) => {
