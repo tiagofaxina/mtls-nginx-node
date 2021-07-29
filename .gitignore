@@ -1,5 +1,4 @@
 # compiled output
-/certs
 /dist
 /node_modules
 
@@ -35,8 +34,7 @@ lerna-debug.log*
 !.vscode/extensions.json
 
 .env
-.env.development
-.env.staging
-.env.production
 
-.rabbitmq
+/certs
+gazin-docker-compose.yml
+cert-commands.txt
